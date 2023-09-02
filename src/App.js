@@ -41,7 +41,6 @@ export default function App() {
 
       <Main>
         <Box>
-          {/* {isLoading ? <Loader /> : <MovieList movies={movies} />} */}
           {isLoading && <Loader />}
           {!isLoading && !error && (
             <MovieList movies={movies} onSelectMovie={handleSelectMovie} />
@@ -97,7 +96,7 @@ function Logo() {
   return (
     <div className="logo">
       <span role="img">🍿</span>
-      <h1>usePopcorn</h1>
+      <h1>CornFlix</h1>
     </div>
   );
 }
@@ -148,31 +147,6 @@ function Box({ children }) {
     </div>
   );
 }
-
-/*
-function WatchedBox() {
-  const [watched, setWatched] = useState(tempWatchedData);
-  const [isOpen2, setIsOpen2] = useState(true);
-
-  return (
-    <div className="box">
-      <button
-        className="btn-toggle"
-        onClick={() => setIsOpen2((open) => !open)}
-      >
-        {isOpen2 ? "–" : "+"}
-      </button>
-
-      {isOpen2 && (
-        <>
-          <WatchedSummary watched={watched} />
-          <WatchedMoviesList watched={watched} />
-        </>
-      )}
-    </div>
-  );
-}
-*/
 
 function MovieList({ movies, onSelectMovie }) {
   return (
@@ -291,7 +265,7 @@ function MovieDetails({ selectedId, onCloseMovie, onAddWatched, watched }) {
       document.title = `Movie | ${title}`;
 
       return function () {
-        document.title = "usePopcorn";
+        document.title = "CornFlix";
         // console.log(`Clean up effect for movie ${title}`);
       };
     },

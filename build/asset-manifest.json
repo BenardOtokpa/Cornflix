@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Cornflix/static/css/main.a85ecdba.css",
+    "main.js": "/Cornflix/static/js/main.7681412d.js",
+    "index.html": "/Cornflix/index.html",
+    "main.a85ecdba.css.map": "/Cornflix/static/css/main.a85ecdba.css.map",
+    "main.7681412d.js.map": "/Cornflix/static/js/main.7681412d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a85ecdba.css",
+    "static/js/main.7681412d.js"
+  ]
+}
